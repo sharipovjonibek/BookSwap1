@@ -27,7 +27,7 @@ export default function Dashboard() {
   return (
     <AuthGuard>
       <DashboardLayout onBookCreated={handleBookCreated}>
-        <div className="flex h-full gap-6">
+        <div className="flex min-h-screen gap-6">
           {/* Left side - Chatbot */}
           <div className="w-1/3 min-w-[400px] ">
             <ChatBot onRecommendations={handleBookRecommendations} />
